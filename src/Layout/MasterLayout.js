@@ -1,6 +1,6 @@
 /*
-Purpose : Using this MasterLayout f
-           or common handling like (error handling,loading,SafeAreaView)
+Purpose : Using this MasterLayout 
+           for common handling like (error handling,loading,SafeAreaView)
            can easily apply to all component
 
 Author : Sachin Gupta
