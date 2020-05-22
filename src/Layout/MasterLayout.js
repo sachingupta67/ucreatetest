@@ -7,15 +7,14 @@ Author : Sachin Gupta
 */
 
 import React from 'react';
-import {View, SafeAreaView, StyleSheet} from 'react-native';
+import {View, SafeAreaView} from 'react-native';
 const MasterLayout = props => {
+  console.log(props.children);
   return (
     <SafeAreaView>
-      <View style={styles.container}>{props.children}</View>
+      <View>{props.children}</View>
     </SafeAreaView>
   );
 };
-const styles = StyleSheet.create({
-  container: {flex: 1},
-});
+
 export default MasterLayout;
