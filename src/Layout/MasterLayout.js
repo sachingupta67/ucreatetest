@@ -9,7 +9,6 @@ Author : Sachin Gupta
 import React from 'react';
 import {View, SafeAreaView} from 'react-native';
 const MasterLayout = props => {
-  console.log(props.children);
   return (
     <SafeAreaView>
       <View>{props.children}</View>
