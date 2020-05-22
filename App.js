@@ -1,15 +1,22 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 import MasterLayout from './src/Layout/MasterLayout';
 import AddDog from './src/screens/AddDog';
 
+import {Provider} from 'react-redux';
+import store from './src/redux/store';
+import Records from './src/screens/Records';
+
 const App = () => {
   return (
-    <MasterLayout>
-      <View style={styles.container}>
-        <AddDog />
-      </View>
-    </MasterLayout>
+    <Provider store={store}>
+      <MasterLayout>
+        <View style={styles.container}>
+          <AddDog />
+          <Records />
+        </View>
+      </MasterLayout>
+    </Provider>
   );
 };
 const styles = StyleSheet.create({
